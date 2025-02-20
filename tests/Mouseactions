@@ -1,0 +1,15 @@
+import{test,expect} from "@playwright/test";
+
+test("mouse actions ",async ({page})=>{
+
+    await page.goto("https://testautomationpractice.blogspot.com/")
+
+  //mouse hover 
+
+  const pointme=page.locator("//button[text()='Point Me']");
+  await pointme.hover();
+
+  const laptops=page.locator("//a[text()='Laptops']");
+  await laptops.hover();
+
+});
